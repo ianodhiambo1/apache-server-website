@@ -1,6 +1,9 @@
+<?php
+echo"
+</html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Users List</title>
     <style>
         body {
@@ -76,8 +79,8 @@
 </head>
 <body>
     <h1>Users List</h1>
-    <div class="table-container">
-        <a href="add_user.php" class="add-button">Add New User</a>
+    <div class='table-container'>
+        <a href='add_user.php' class='add-button'>Add New User</a>
         <table>
             <tr>
                 <th>UserID</th>
@@ -85,7 +88,7 @@
                 <th>Email</th>
                 <th>Actions</th>
             </tr>
-            <?php
+            ";
             require './db_connection.php';
 
             // Fetch users
@@ -105,8 +108,11 @@
             }
 
             $conn->close();
-            ?>
+            echo"
+           
         </table>
     </div>
 </body>
 </html>
+ ?>
+ ";
