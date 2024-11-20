@@ -5,7 +5,7 @@ require_once '../config/db_connection.php';
 
 // Fetch users
 $sql = "SELECT username, email FROM users";
-$result = $conn->query($sql);
+$result = $db_connect->query($sql);
 
 $users = [];
 while ($row = $result->fetch_assoc()) {
@@ -14,6 +14,6 @@ while ($row = $result->fetch_assoc()) {
 
 echo json_encode($users);
 
-$conn->close();
+$db_connect->close();
 ?>
 
