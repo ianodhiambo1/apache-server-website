@@ -95,7 +95,7 @@ echo"
 
             // Fetch users
             $sql = "SELECT * FROM users";
-            $result = $conn->query($sql);
+            $result = $db_connect->query($sql);
 
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>
@@ -109,7 +109,7 @@ echo"
                 </tr>";
             }
 
-            $conn->close();
+            $db_connect->close();
             echo"
            
         </table>
