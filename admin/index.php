@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,7 +86,7 @@
                 <th>Actions</th>
             </tr>
             <?php
-            require './app/config/db_connection.php';
+            require './db_connection.php';
 
             // Fetch users
             $sql = "SELECT * FROM users";
