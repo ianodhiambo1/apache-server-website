@@ -88,7 +88,9 @@
                 <th>Actions</th>
             </tr>
             <?php
-            require './config/db_connection.php';
+
+            require './app/config/db_connection.php';
+
 
             // Fetch users
             $sql = "SELECT * FROM users";
@@ -96,7 +98,7 @@
 
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>
-                    
+                    <td>{$row['id']}</td>
                     <td>{$row['username']}</td>
                     <td>{$row['email']}</td>
                     <td class='actions'>
