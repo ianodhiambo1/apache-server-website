@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-require_once '../config/db_connection.php';
+require_once './db_connection.php';
 
 // Fetch users
 $sql = "SELECT username, email FROM users";
