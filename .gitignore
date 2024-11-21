@@ -4,4 +4,7 @@
 /.env
 config/
 app/config/
+db_connection.php
+db_constants.php
+
 
